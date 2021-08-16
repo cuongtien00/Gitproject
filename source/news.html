@@ -2,14 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Titl e</title>
+    <title>Title</title>
 </head>
 <body>
 <form>
-    <label for="fname">First name:</label><br>
-
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname">
+    <table style="background:lightyellow;width:40%;height:30%">
+        <tr>
+            <td></td>
+            <td><h1 style="background:lightblue;color:blue">ĐĂNG KÝ HỌC VIÊN</h1></td>
+        </tr>
+        <tr>
+            <td>Họ và tên</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Ngày sinh</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td>
+                <input type="radio">Nam
+                <input type="radio">Nữ
+            </td>
+        </tr>
+        <tr>
+            <td>Địa chỉ</td>
+            <td><input type="text" style="height:50px"></td>
+        </tr>
+        <tr>
+            <td>Lớp</td>
+            <td>
+                <select name="class" id="Chọn lớp">
+                <option value="tiếng nhật">-Chọn lớp-</option>
+                <option value="tiếng nhật">tiếng nhật</option>
+                <option value="tiếng anh">tiếng anh</option>
+                <option value="tiếng hàn">tiếng hàn</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Điện thoại</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button>Đăng ký</button><button>Nhập lại</button></td>
+        </tr>
+    </table>
 </form>
 </body>
 </html>
