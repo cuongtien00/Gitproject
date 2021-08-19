@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input id="t9" type="text"><button >Tính số ngày</button>
+</form>
+<script>
+    let so=document.getElementById('t9');
+    switch (so) {
+        case '1':
+        case '3':
+        case '5':
+        case '7':
+        case '8':
+        case '10':
+        case '12':
+            alert("tháng này có 31 ngày");
+            break;
+        case '2' :
+            alert("tháng 2 có 28 hoặc 29 ngày");
+            break;
+        case '4' :
+            alert("tháng 4 có 30 ngày");
+            break;
+        case '6' :
+            alert("tháng 6 có 30 ngày");
+            break;
+        case '9' :
+            alert("tháng 9 có 30 ngày");
+            break;
+        case '12' :
+            alert("tháng 12 c1230 ngày");
+            break;
+    }
+</script>
+</body>
+</html>
