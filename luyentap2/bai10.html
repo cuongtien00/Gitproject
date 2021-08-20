@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Số kWh tiêu thụ"));
+    b=a;
+    if(0<a && a<=50) {
+        b=a*1600;
+        alert("Tiền điện là "+b +" VND");
+    }else if(50<a && a<=100) {
+        b=a*1700;
+        alert("Tiền điện là "+b +" VND");
+    }
+    else if(100<a && a<=200) {
+        b=a*2000;
+        alert("Tiền điện là "+b +" VND");
+    }
+    else if(200<a && a<=300) {
+        b=a*2500;
+        alert("Tiền điện là "+b +" VND");
+    }
+    else {
+        b=a*3000
+        alert("Tiền điện là "+b +" VND");
+    }
+</script>
+</body>
+</html>

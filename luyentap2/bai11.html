@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Tính thuế thu nhập cá nhân
+    let a = parseInt(prompt("thu nhập cá nhân (tr đồng)"));
+    let b = a;
+    if (a<=5) {
+        b = 5*a/100*1000000
+        alert ("Thuế phải nộp là "+b +" VND");
+    } else if (5<a && a<=10) {
+        b=(0.25+10*a/100)*1000000
+        alert ("Thuế phải nộp là "+b +" VND");
+    }
+    else if (10<a && a<=18) {
+        b=(0.75+15*a/100)*1000000
+        alert ("Thuế phải nộp là "+b +" VND");
+    }
+    else if (18<a && a<=32) {
+        b=(1.95+20*a/100)*1000000
+        alert ("Thuế phải nộp là "+b +" VND");
+    }
+    else if (32<a && a<=52) {
+        b=(4.75+25*a/100)*1000000
+        alert ("Thuế phải nộp là "+b +" VND");
+    }
+    else if (52<a && a<=80) {
+        b=(9.75+30*a/100)*1000000
+        alert ("Thuế phải nộp là "+b +" VND");
+    }
+    else if (a>80) {
+        b=(18.15+35*a/100)*1000000
+        alert ("Thuế phải nộp là "+b +" VND");
+    }else {
+        alert ("không phải đóng thuế");
+    }
+
+</script>
+</body>
+</html>
