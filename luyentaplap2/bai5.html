@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Lãi suất 7%/nam
+    let firstMoney =parseInt(prompt("Nhap so tien ban dau"));
+    let month = parseInt(prompt("Nhap so ky han (thang)"));
+    let i = 0;
+    let money ;
+    money = firstMoney*(1 + 0.07/12);
+    let lai = 1;
+    for ( i = 0; i < month; i++) {
+        lai *= money
+    }
+    document.write(lai)
+</script>
+</body>
+</html>
