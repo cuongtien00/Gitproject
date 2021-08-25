@@ -5,6 +5,33 @@
     <title>Title</title>
 </head>
 <body>
+<button onclick="play()">Chơi</button>
+<script>
+   function play() {
+       let min = parseInt(prompt("Nhap so be nhat"));
+       let max = parseInt(prompt("Nhap so lon nhat"));
+       let num = Math.floor(Math.random()*(max - min)) + min ;
+       let i = 1
+       let guestNum;
+       do {
+            guestNum =parseInt(prompt("Nhap so du doan"));
+           if (guestNum>num) {
+               alert("Nhap so nho hon");
+           }
+           else if (guestNum<num) {
+               alert("Nhap so lon hon");
+           }
+           i++
+       } while ( guestNum !== num && i<=3);
 
+       if ( guestNum === num ) {
+           alert("Chuc mung ban");
+       }
+       else {
+           alert("Rat tiec ban da sai");
+       }
+
+   }
+</script>
 </body>
 </html>
