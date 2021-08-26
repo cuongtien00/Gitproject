@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  let english = ["one", 'two', 'three', 'four', 'five'];
+  let vietnam = ['một', 'hai', 'ba', 'bốn', 'năm'];
+  function findByNum() {
+    let keyword = prompt("nhap so can tra");
+    for (let i = 0; i < english.length; i++) {
+      if (english[i]==keyword) return i
+    }
+    return -1
+  }
+  function translate(){
+    let i = findByNum();
+    if (i!= -1) { alert(vietnam[i]);
+
+  }else {
+      alert("Khong tim thay")
+    }
+  }
+  translate()
+
+</script>
 </body>
 </html>
