@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let a = prompt("Moi nhap chuoi 1 ").split("");
+let b = prompt("Moi nhap chuoi 2").split("");
+let c = a.length;
+let d = b.length;
+if (c == d) {
+    for (let i = 0; i < a.length;) {
+        if (a[i]==b[i]) {
+            i++
+        }
+        else {
+            alert("hai chuoi nay khong giong nhau");
+            break;
+        }
+    }
+    alert("Hai chuoi nay giong nhau");
+}
+else {
+    alert("hai chuoi nay khong giong nhau");
+}
+</script>
+</body>
+</html>

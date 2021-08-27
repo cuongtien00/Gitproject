@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = ['n', 'e', 'i', 't', 'g', 'n', 'o','u', 'c'];
+    let first = 0;
+    let last = a.length - 1;
+    let num;
+    for (; first < last;) {
+        num = a[first];
+        a[first] = a[last];
+        a[last] = num;
+        first++
+        last--
+    }
+    alert(a)
+</script>
+</body>
+</html>
