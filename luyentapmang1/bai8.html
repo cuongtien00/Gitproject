@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [1, 4, 2, 6, -1, 8, 7, 10, 9, 0];
+    let num;
+    for (let i = 0; i < a.length-1; i++) {
+        for (let j = 0; j <a.length-1-i ; j++) {
+        if (a[j]>a[j+1]) {
+            num = a[j];
+            a[j] = a[j + 1];
+            a[j + 1] = num
+        }
+        }
+    }
+    alert(a);
+</script>
+</body>
+</html>

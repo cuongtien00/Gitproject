@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [1, 2, 4, 5, "V", 9, 6, 8, 3, 34];
+    function tim() {
+        let b = prompt("moi nhap");
+        for (let i = 0; i < a.length; i++) {
+            if (a[i]==b) return i;
+        }
+        return -1
+    }
+    function hienthi() {
+        let i = tim();
+        if (i!=-1){
+            alert(a[i] + " is in the array");
+        }
+        else {
+            alert( ' is not in the array');
+        }
+    }
+    hienthi()
+</script>
+</body>
+</html>

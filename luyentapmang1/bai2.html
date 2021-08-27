@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = [1, 2, 3, 4, 5, 6, 10, 32, 9, 11];
+  let max = a[0];
+  let b = 0;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i]>max) {
+      b = a[i];
+      max = a[i]
+    }
+  }
+  alert(" Gia tri lon nhat la " + b + " nam o vi tri so " + a.indexOf(b) );
+
+</script>
+</body>
+</html>
