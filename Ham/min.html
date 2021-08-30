@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [3, 5, 1, 8, -3, 7, 8];
+    let min = array[0]
+    function findMin (arr) {
+        for (let i = 1; i < arr.length; i++) {
+            if (min>arr[i]) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+    let minArray = findMin(array);
+    alert("Giá trị nhỏ nhất trong mảng là " + minArray);
+
+
+</script>
+</body>
+</html>
