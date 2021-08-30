@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let ngoiSao = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+  let chomSao = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+  function findStar() {
+      let star = prompt("Moi nhap ten ngoi sao");
+      for (let i = 0; i < ngoiSao.length; i++) {
+          if(star==ngoiSao[i]) {
+              return i
+          }
+      }
+      return -1
+  }
+  function findChomSao () {
+      let i = findStar();
+      if(i!== -1) alert("Chom sao tuong ung la " + chomSao[i]);
+      else alert ("Khong tim thay");
+  }
+  findChomSao ()
+</script>
+</body>
+</html>
