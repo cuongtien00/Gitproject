@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="Nhap">
+<select name="" id="from">
+    <option value="3.279">feet->meter</option>
+    <option value="0.305">meter->feet</option>
+</select>
+<button onclick="convert()">convert</button>
+<p id="result"></p>
+
+<script>
+function convert() {
+    let nhap = document.getElementById("Nhap").value;
+    nhap = parseInt(nhap);
+    let from = document.getElementById("from").value;
+    let result = nhap/from;
+    document.getElementById("result").innerHTML= result;
+
+}
+</script>
+</body>
+</html>
