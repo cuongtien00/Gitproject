@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập giá trị của độ F
+<input type="text" id="doF">
+<button onclick="change()">Convert</button>
+<p id="hienThi"></p>
+<script>
+function change() {
+    let C;
+    let F = document.getElementById("doF").value;
+    F = parseInt(F);
+    C = (F-32)/1.8
+    document.getElementById("hienThi").innerHTML = "Độ C tương ứng là " + C;
+}
+</script>
+</body>
+</html>
