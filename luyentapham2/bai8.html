@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang = [2, 3, 4, 5, 76, 1, 0]
+    function changePlaces (mang) {
+        let first = 0
+        let last = mang.length-1
+
+        for ( ; first< last; ) {
+            let tem = mang[first];
+            mang[first] = mang[last];
+            mang[last] = tem
+            first++
+            last--
+        }
+        document.write(mang);
+    }
+   changePlaces(mang);
+
+</script>
+</body>
+</html>

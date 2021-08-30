@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function changePlaces (mang) {
+        let first = 0
+        let last = arguments.length-1
+
+        for ( ; first< last; ) {
+            let tem = arguments[first];
+            arguments[first] = arguments[last];
+            arguments[last] = tem
+            first++
+            last--
+        }
+        document.write(mang);
+    }
+    changePlaces(1,2,3,4);
+</script>
+</body>
+</html>

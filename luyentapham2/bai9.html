@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = ['one', 'two', 'one', 'three', 'one'];
+
+    function check(key) {
+        let count = 0
+        for (let i = 0; i < a.length; i++) {
+            if(a[i] == key) {
+                count++
+            }
+        }
+        if (count == 0) {
+            alert("-1");
+        }
+        alert("so lan xuat hien " + count);
+    }
+check('four');
+
+</script>
+</body>
+</html>
