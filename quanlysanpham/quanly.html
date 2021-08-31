@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<style>
+    button {
+        background-color: lightgreen;
+        color: white;
+        height:30px;
+        font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+
+    }
+    table, tr, td {
+        width:500px;
+        height:60px;
+        font-family: Arial;
+
+    }
+    tr:nth-child(even) {
+        background: lightgrey;
+    }
+    input {
+        width: 250px;
+        height:20px;
+    }
+</style>
+<body>
+<h2>Products List</h2>
+<input type="text" id="addP">
+<button onclick="addProduct()">Add</button>
+<br>
+<button onclick="showAllProduct()">Display All Product</button>
+<p id="result"></p>
+<table>
+    <tbody id="products">
+
+    </tbody>
+</table>
+<script src="js.js"></script>
+</body>
+</html>
