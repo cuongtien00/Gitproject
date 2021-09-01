@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Date1 {
+      constructor(day, month, year) {
+          this.day = day;
+          this.month = month;
+          this.year = year;
+      }
+      getDay() {
+          return this.day;
+      }
+      getMonth(){
+          return this.month;
+      }
+      getYear() {
+          return this.year;
+      }
+      setDay(d) {
+           this.day = d;
+          return d
+      }
+      setMonth(m) {
+          this.month = m;
+          return m
+      }
+      setYear(y) {
+         this.year = y;
+          return y
+      }
+  }
+  let Date = new Date1(1, 9, 2021)
+</script>
+</body>
+</html>
